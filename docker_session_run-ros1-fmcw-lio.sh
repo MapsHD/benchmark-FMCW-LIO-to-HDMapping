@@ -26,8 +26,9 @@ CLOUD_TOPIC="${CLOUD_TOPIC:-/point_cloud_world}"
 
 # FMCW-LIO parameter file (LiDAR/IMU topics, LiDAR type, extrinsics, noise):
 # a file on the host, or the name of one shipped with FMCW-LIO in its config/
-# folder (e.g. livox_mid360.yaml).
-CONFIG_FILE="${CONFIG_FILE:-aeva64_fmcw_lio_structured.yaml}"
+# folder. Default: the Bunker DVI dataset (Livox Mid-360), FMCW-LIO's own
+# livox_mid360.yaml.
+CONFIG_FILE="${CONFIG_FILE:-livox_mid360.yaml}"
 
 # RViz on by default — the live view of how FMCW-LIO tracks the dataset.
 USE_RVIZ="${USE_RVIZ:-1}"
@@ -45,7 +46,7 @@ usage() {
   echo
   echo "Environment variables:"
   echo "  CONFIG_FILE  - FMCW-LIO parameter file: a host *.yaml, or the name of one in"
-  echo "                 FMCW-LIO's config/ folder  (default: aeva64_fmcw_lio_structured.yaml)"
+  echo "                 FMCW-LIO's config/ folder  (default: livox_mid360.yaml)"
   echo "  ODOM_TOPIC   - FMCW-LIO odometry output topic   (default: /odometry)"
   echo "  CLOUD_TOPIC  - FMCW-LIO world-frame scan topic  (default: /point_cloud_world)"
   echo "  USE_RVIZ     - 1/0, launch RViz live view       (default: 1)"
