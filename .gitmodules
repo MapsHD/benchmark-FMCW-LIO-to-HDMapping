@@ -1,0 +1,9 @@
+[submodule "src/FMCW-LIO"]
+	path = src/FMCW-LIO
+	url = https://github.com/IMRL/FMCW-LIO.git
+[submodule "src/livox_ros_driver"]
+	path = src/livox_ros_driver
+	url = https://github.com/Livox-SDK/livox_ros_driver.git
+[submodule "src/fmcw-lio-to-hdmapping/src/3rdparty/LASzip"]
+	path = src/fmcw-lio-to-hdmapping/src/3rdparty/LASzip
+	url = https://github.com/LASzip/LASzip.git
